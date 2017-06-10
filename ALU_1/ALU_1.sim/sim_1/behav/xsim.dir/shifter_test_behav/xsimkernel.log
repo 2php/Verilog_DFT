@@ -1,0 +1,3 @@
+Running: xsim.dir/shifter_test_behav/xsimk.exe -simmode gui -wdb shifter_test_behav.wdb -simrunnum 0 -socket 40691
+Design successfully loaded
+Design Loading CPU Usage: 1045 ms

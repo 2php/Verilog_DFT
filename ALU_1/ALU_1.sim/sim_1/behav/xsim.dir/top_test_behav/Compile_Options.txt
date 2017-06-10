@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "top_test_behav" --prj "A:/Semester 7/DigitalIC/ALU_1/ALU_1.sim/sim_1/behav/top_test.prj" "xil_defaultlib.top_test" "xil_defaultlib.glbl" 
