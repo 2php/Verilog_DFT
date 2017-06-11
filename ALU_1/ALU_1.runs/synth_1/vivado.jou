@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Jun 11 19:06:05 2017
+# Process ID: 422
+# Log file: /home/chathura/Desktop/Verilog_DFT/ALU_1/ALU_1.runs/synth_1/module_top.vds
+# Journal file: /home/chathura/Desktop/Verilog_DFT/ALU_1/ALU_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source module_top.tcl

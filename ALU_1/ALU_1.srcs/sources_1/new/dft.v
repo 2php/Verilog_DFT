@@ -108,7 +108,7 @@ always@(posedge external_clk or posedge reset) begin
                         rx_done <= 1'b1;
                       end
             2'b11   : begin
-                         tmr_reg <= tmr_serial;
+                         tmr_reg <= tmr_reg;
                          tmr_serial_count <= 2'b11;
                          rx_done <= 1'b1;
                       end
