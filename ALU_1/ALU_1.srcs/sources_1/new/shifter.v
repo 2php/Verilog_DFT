@@ -22,13 +22,13 @@
 
 module shifter(
     input clk,
-    input wire Control,
+    input wire enable,
     input wire [15:0] A,
     output reg [15:0] Answer 
     );
     
     always@(*)	begin
-        case (Control)  
+        case (enable)  
             1'b1: Answer = {A[14:0],1'b0};
             
             default: Answer = A;
