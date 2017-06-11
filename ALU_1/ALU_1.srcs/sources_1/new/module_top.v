@@ -31,7 +31,7 @@ input wire [15:0] B,
 input wire [3:0] ALU_CTRL,
 input wire SHIFTER_CTRL,
 
-output wire [15:0] Answer
+output wire [15:0] answer
 
     );
     
@@ -39,15 +39,17 @@ wire clk;
 wire internal_clk;
 wire [15:0] ALU_OUT;  
 wire [15:0] Shifter_IN; 
+wire [15:0] DFT_OUT; 
 
-  
+assign answer = (test_en)?DFT_OUT:SHIFT_OUT;
+
+
 ALU alu(
     .clk(clk),
     .A(A),
     .B(B),
     .Control(ALU_CTRL),
     .Answer(ALU_OUT)
-
 );
 
 shifter shift_mdl(
@@ -72,7 +74,8 @@ dft dft_1 (
     .SHIFT_OUT(SHIFT_OUT),
     .SHIFT_ENA(SHIFT_CTRL),
     .SHIFT_IN(SHIFT_IN),
-    .clk_out(clk)
+    .clk_out(clk),
+    .dft_data_out(DFT_OUT)
 );
 
 endmodule
